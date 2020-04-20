@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+<link href="css/style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Aladin' rel='stylesheet'>
+
+<title>Mini Project 2</title>
+
+</head>
+
+<body>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+		$(document).ready(function() {
+			$(".btn").click(function()){
+				$(".image").fadeIn();
+				/*$("#rock").fadeIn();
+				$("#sky").fadeIn().delay(800);
+				$("#seahorse").fadeIn().delay(1600);*/
+			}
+		}
+	</script>-->
+	<script>	
+		function showObjects(){ 
+			var image = document.getElementById("seahourse");
+			image.style.display = "block";
+			var text = document.getElementById("text");
+			text.style.display = "block";
+			setTimeout(function(){
+				text.style.color = "#482a17";
+			}, 2000);
+		}
+
+		function delay(){
+			var text = document.getElementById("text");
+			text.style.color = '#482a17'
+		}
+	</script>
+	<div class="center">
+		<button class="btn" onclick="showObjects(); setTimer(delay, 2000);""> filter sky </button>
+	</div>
+	<p id="text" style="font-family: 'Aladin'; font-size:4rem; position:absolute; margin-left: 30%; color: white; margin-top: 30%; z-index: 2"> Seahorses </p>
+	<div class="hide">
+		<img src="20190314_arizona.jpg" id="rock" class="image"> 
+		<img src="seahorses.png" id="seahourse" class="image">
+	</div>

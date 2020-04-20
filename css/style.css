@@ -1,0 +1,30 @@
+.center {
+	position: relative;
+	text-align: center;
+}
+
+#seahourse {
+	display: none;
+}
+
+#galaxy {
+	display: none;
+}
+
+#text {
+	display: none;
+}
+
+.image {
+	width: 60%;
+	margin-left: 20%;
+	position: absolute;
+	margin-top: 2%;
+}
+
+button {
+	padding: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 3%;
+}
